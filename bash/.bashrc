@@ -32,3 +32,4 @@ alias u='/home/mathewkramsch/Notes/update.sh'
 
 # git
 alias gac='git add . && git commit -m '
+alias gp='git push'
