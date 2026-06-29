@@ -1,1 +1,1 @@
-Dotfiles for Omarchy setup
+dotfiles for omarchy setup
