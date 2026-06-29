@@ -29,3 +29,6 @@ alias vim='nvim'
 alias r='. ranger'
 alias p='cd /home/mathewkramsch/Notes/Personal Notes && clear'
 alias u='/home/mathewkramsch/Notes/update.sh'
+
+# git
+alias gac='git add . && git commit -m '
