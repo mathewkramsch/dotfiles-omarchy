@@ -19,17 +19,29 @@ unalias icx
 unalias ix
 unalias lsa
 unalias lta
+unalias eff
+unalias ff
 
 # overwrite aliases
 alias ls='eza --group-directories-first --icons=auto'
 alias lt='eza --tree --level=2 --icons --git'
 alias vim='nvim'
+alias f='$EDITOR "$(fzf --preview '\''bat --style=numbers --color=always {}'\'')"'
 
 # new aliases
 alias r='. ranger'
 alias p='cd /home/mathewkramsch/Notes/Personal Notes && clear'
-alias u='/home/mathewkramsch/Notes/update.sh'
+#alias u='cd /home/mathewkramsch/Notes && ./update.sh'
 
 # git
 alias gac='git add . && git commit -m '
 alias gp='git push'
+alias gd='git diff'
+alias gs='git status'
+
+function u() {
+  gs
+  git pull
+  gac 'update'
+  gp
+}
