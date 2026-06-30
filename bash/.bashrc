@@ -31,7 +31,6 @@ alias f='$EDITOR "$(fzf --preview '\''bat --style=numbers --color=always {}'\'')
 # new aliases
 alias r='. ranger'
 alias p='cd /home/mathewkramsch/Notes/Personal Notes && clear'
-#alias u='cd /home/mathewkramsch/Notes && ./update.sh'
 
 # git
 alias gac='git add . && git commit -m '
